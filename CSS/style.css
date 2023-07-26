@@ -1,0 +1,348 @@
+/*Importing things to CSS:*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla One');
+
+/*Basic styles for the entire HTML document:*/
+body {
+    scrollbar-width: none;
+    margin: 0%;
+    height: 100%
+}
+h1 {
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*
+    * .flex-container: sets the container for the title and background image
+    * .flex-container > .flex-item: sets the text properties for the title
+    * #directions: sets the properties for the directions of the website
+    * #escape-button: used to escape the provinces section and is hidden at the start
+    * select: sets the display for the dropdown option
+    * #change-province: button to change the province of when input is selected 
+    * #selected: changes the title of the selected province
+*/
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #d52b1e;
+    text-align: center;
+    padding: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/255px-Flag_of_Canada_%28Pantone%29.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    
+}
+
+.flex-container > .flex-item {
+    width: 50%;
+    height: auto;  
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    text-shadow: 5px 5px 5px forestgreen;
+}
+
+#directions {
+    text-align: center;
+}
+
+#escape-button {
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+
+select {
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+    background-color: #d52b1e;
+    border-color: transparent;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+select:hover {
+    background-color: #c3141f;
+    cursor: pointer;
+}
+
+#changeProvince {
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#selected {
+    text-align: center;
+    color: #d52b1e;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #d52b1e, 0 0 20px #d52b1e, 0 0 30px #2493df, 0 0 40px #2493df, 0 0 50px #2493df, 0 0 60px #2493df, 0 0 70px #2493df;
+    }
+    to {
+        text-shadow: 0 0 20px #d52b1e, 0 0 30px #2493df, 0 0 40px #2493df, 0 0 50px #2493df, 0 0 60px #2493df, 0 0 70px #2493df, 0 0 80px #2493df;
+    }
+}
+
+#changeProvince {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #d52b1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+#changeProvince:hover {
+    background-color: #c3141f;
+    cursor: pointer;
+}
+  
+#changeProvince:active {
+    background-color: #a30816;
+}
+
+/*
+    * main: sets the main tag to display the content in flex format
+    * .content: sets the content of the webpage 3/4 
+    * #time: sets the properties of the time of the province
+    * #image1: sets the container of the provincial image
+    * #province-image: sets the width of the province image to match flex
+*/
+
+main {
+    display: flex;
+}
+.content {
+    color: black;
+    padding: 20px;
+    height: 100%;
+    flex: 4;
+    max-width: 100%
+}
+.content:hover {
+    background-color: red;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#time {
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Fjalla One';
+    font-size: 150%;
+}
+
+#time:hover {
+    font-size: 200%;
+    color: yellow;
+}
+
+#province_image {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 50%; /*(img-height / img-width * container-width)*/
+    color: black;
+    font-size: 100%;
+    margin-bottom: 50px;
+}
+
+#province_image:hover {
+    font-family: "Pacifico", cursive;
+    font-size: 150%;
+    color: yellow;
+}
+
+#paragraphs {
+    font-size: 120%;
+}
+
+#capital-image {
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    color: black;
+    font-size: 100%;
+    margin-bottom: 50px;
+}
+
+#capital-image:hover {
+    font-family: "Pacifico", cursive;
+    font-size: 150%;
+    color: yellow;
+}
+
+#politician-image {
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    color: black;
+    font-size: 100%;
+    margin-bottom: 50px;
+}
+
+#politician-image:hover {
+    font-family: "Pacifico", cursive;
+    font-size: 150%;
+    color: yellow;
+}
+
+/*
+    * .side: changes the properties of the side content to 1/4 of the webpage
+    * #fun-fact-info: sets the title of the fun facts title
+*/
+
+.side {
+    /*padding: 20px;*/
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+.side:hover {
+    background-color: red;
+    font-size: 120%;
+}
+
+#fun-fact-info {
+    font-size: 100%;
+    list-style-type: none;
+    text-align: left;
+}
+#fun-fact-info li {
+    margin-bottom: 10%;
+    margin-left: -25px;
+    font-weight: bolder;
+}
+
+#more-fun-facts {
+    font-size: 100%;
+    text-align: left;
+}
+
+.facts {
+    margin-bottom: 10%;
+    color: black;
+    margin-left: 10%;
+}
+
+.facts:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+.side_Images {
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 50%;
+    margin-bottom: 30px;
+}
+
+/*
+    * Video player
+*/
+
+.videos {
+    margin-top: 30px; /* Adjust the margin top value as desired */
+    margin-bottom: 30px; /* Adjust the margin bottom value as desired */
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+  
+#video-container:hover {
+    background-color: red;
+}
+
+#video-error-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    * footer: changes the properties of the footer of the webpage
+*/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.email-button {
+    background-color: #d00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.email-button:hover {
+    background-color: #a00;
+}
+
+.email-button .fa {
+    margin-right: 5px;
+}

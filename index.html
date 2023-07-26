@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Canada, Explore Canada">
+    <meta name="description" content="Basic Website written in HTML, CSS, JavaScript, and JSON to educate users about Canada. Users are encouraged to use the website to explore Canada!">
+    <meta name="author" content="Alexander Dominguez">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/Canada_Leaf.png">
+    <title>ExploreCanadianProvinces</title>
+</head>
+<body>
+    <script src="scripts/script.js"></script>
+    <header>
+        <div class="flex-container">
+            <div class="flex-item" id="Title">Explore Canada!</div>
+        </div>
+    </header>
+    
+    <div id="instructions">
+        <h1 id="directions">Please select from the following dropdown bellow to get started!</h1>
+        <button id="escape-button" onclick="escape()">Go Back</button>
+        <select id="dropdown">
+            <option value="Canada">Canada</option>
+            <option value="Alberta">Alberta</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="Québec">Québec</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Yukon">Yukon</option>
+        </select>
+        <button onclick="changeProvince()" id="changeProvince">Press Me to Begin!</button>
+        <h1 id="selected">Select An Option Above To Begin</h1>
+    </div>
+    
+    <main>
+        <section class="content">
+            <h1 id="time">Current Time: 00:00:00</h1>
+            <div id="province_image">Province/Territory/Country Image</div>
+            <div id="paragraphs">
+                <p id="general-info">General information about the province/territory/country</p>
+                <div id="capital-image">Capital Image</div>
+                <p id="capital-info">Information about the capital city</p>
+                <div id="politician-image">Political Image</div>
+                <p id="political-info">Information about the politics</p>
+            </div>
+        </section>
+        
+        <section class="side">
+            <h1 id="side-label">Fun Facts:</h1>
+            
+            <ul id="fun-fact-info">
+                <li id="capital-city">Capital City</li> 
+                <li id="popular-city">Most Popular City</li> 
+                <li id="size">Size (area)<sup>2</sup></li>
+                <li id="official-language">Official Language(s)</li>
+                <li id="population">Population</li>
+                <li id="abbreviation">Abbreviation</li>
+            </ul>
+
+            <div id="more-fun-facts">
+                <p id="factOne" class="facts">Fun Fact 1</p>
+                <div class="side_Images" id="imageOne"></div>
+                <p id="factTwo" class="facts">Fun Fact 2</p>
+                <div class="side_Images" id="imageTwo"></div>
+                <p id="factThree" class="facts">Fun Fact 3</p>
+                <div class="side_Images" id="imageThree"></div>
+                <p id="factFour" class="facts">Fun Fact 4</p>
+                <div class="side_Images" id="imageFour"></div>
+                <p id="factFive" class="facts">Fun Fact 5</p>
+                <div class="side_Images" id="imageFive"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="videos">
+        <div id="video-container">
+            <iframe id="video" width="560" height="315" src="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <h5 id="video-error-msg">If you see an error message, you most likely haven't clicked on anything from the dropdown. If there's still a problem, contact the developer down below!</h5>
+    </div>
+    
+    <footer>
+        © 2023 Alexander Dominguez. All rights reserved.
+        <br>
+        <a href="mailto:alexanderdoestech@gmail.com" target="_blank" class="email-button">
+            <i class="fa fa-leaf"></i>
+            Contact the Developer
+        </a>
+    </footer>
+</body>
+</html>
