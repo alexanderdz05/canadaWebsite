@@ -30,8 +30,3 @@ An interactive educational website built with HTML, CSS, JavaScript, and JSON th
 1. Clone or download the repository
 2. Open `index.html` in any modern web browser  
    *(For best results, use a local server if your browser blocks `fetch` from local files)*
-
-### Optional (Recommended)
-Run with a local server:
-```bash
-python -m http.server
